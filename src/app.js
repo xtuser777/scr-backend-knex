@@ -8,7 +8,6 @@ import Cors from 'cors';
 // import Helmet from 'helmet';
 
 import home from './routes/home';
-import user from './routes/user';
 import state from './routes/state';
 import city from './routes/city';
 
@@ -41,7 +40,6 @@ class App {
 
   routes() {
     this.app.use('/', home);
-    this.app.use('/users', user);
     this.app.use('/city', city);
     this.app.use('/state', state);
   }

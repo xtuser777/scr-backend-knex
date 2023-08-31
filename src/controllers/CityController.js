@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Request, Response } from 'express';
-import mariadb from 'mariadb';
 import City from '../models/City';
-import CityRepository from '../repository/CityRepository';
 import Database from '../database/index';
 
 export default class CityController {
