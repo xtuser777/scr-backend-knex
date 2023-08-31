@@ -10,6 +10,9 @@ import Cors from 'cors';
 import home from './routes/home';
 import state from './routes/state';
 import city from './routes/city';
+import level from './routes/level';
+
+import 'regenerator-runtime';
 
 const whiteList = [
   'http://localhost:3001',
@@ -42,6 +45,7 @@ class App {
     this.app.use('/', home);
     this.app.use('/city', city);
     this.app.use('/state', state);
+    this.app.use('/level', level);
   }
 }
 
